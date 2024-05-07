@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+    <!-- //Custom Theme files -->
+    <title>Login Page</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Login section Begins -->
+    <body>
+        <div class="container-fluid">
+            <form method="POST" class="mx-auto">
+                {% csrf_token %}
+                <h4 class="text-center">Login</h4>
+                <div class="mb-3 mt-5">
+                  <label for="exampleInputEmail1" class="form-label">User Name</label>
+                  <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+                  <div id="emailHelp" class="form-text mt-3">Forget password ?</div>
+                </div>
+              
+                <button type="submit" class="btn btn-primary mt-5">Login</button>
+              </form>
+        </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+
+
+
+    <!-- Login section End -->
+    
+
+    <!-- Js Plugins -->
+    <script src="{% static 'pr/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'pr/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'pr/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'pr/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'pr/js/main.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    
+</body>
+
+</html>

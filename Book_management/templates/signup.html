@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Male_Fashion Template">
+    <meta name="keywords" content="Male_Fashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Custom Theme files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- //Custom Theme files -->
+    <title>Vogue Stash</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="{% static 'pr/img/mylogo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    
+                </div>
+                <div class="col-lg-3 col-md-3">
+                </div>
+            </div>
+            <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Sign-Up section Begins -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign Up Form by Colorlib</title>
+    
+        <!-- Font Icon -->
+        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/slidestyle.css">
+    </head>
+    <body>
+    
+        <div class="main">
+    
+            <section class="signup">
+                <!-- <img src="images/signup-bg.jpg" alt=""> -->
+                <div class="container">
+                    <div class="signup-content">
+                        <h2 class="form-title">Create account</h2>
+                        <form method="POST" id="signup-form" class="signup-form" >
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="name" id="name" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
+                                <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="re_password" id="re_password" placeholder="confirm your password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                            </div>
+                        </form>
+                        <p class="loginhere">
+                            Have already an account ? <a href="{% url 'login' %}" class="loginhere-link">Login here</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+        </div>
+    
+        <!-- JS -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+    </html>
+    <!-- Sign-Up section End -->
+
+    
+
+    <!-- Js Plugins -->
+    <script src="{% static 'pr/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'pr/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'pr/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'pr/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'pr/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'pr/js/main.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   
+
+
+
+
+
+</body>
+
+</html>
